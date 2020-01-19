@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
 body {
     padding: 0;
     margin: 0;
 
-    background: #111;
+    background-image: linear-gradient(to bottom right, #ffc0cb, #e75480);
     color: #fff;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 6vh;
 }

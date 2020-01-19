@@ -3,7 +3,21 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
+  .text {
+      margin-bottom: 24px;
+  }
 
   .clock {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+
+        & > div {
+          margin: 0 8px;
+        }
+    }
   }
 }
