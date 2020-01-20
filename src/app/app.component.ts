@@ -24,6 +24,7 @@ export class AppComponent {
       this.interval();
     }, 1000);
   }
+
   interval() {
     const currentDate = new Date();
     const deltaMs = currentDate.getTime() - this.startDate.getTime();

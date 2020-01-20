@@ -4,20 +4,36 @@
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+
   .text {
-      margin-bottom: 24px;
+    padding: 24px;
+    font-size: 4vh;
+    @media screen and (max-width: 425px) {
+      padding: 40px;
+      padding-bottom: 0;
+      text-align: center;
+    }
+  }
+  .text2 {
+    padding: 24px;
+    font-size: 4vh;
+    @media screen and (max-width: 425px) {
+      padding: 40px;
+      padding-top: 0;
+      text-align: center;
+    }
   }
 
   .clock {
     @media screen and (min-width: 1280px) {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
 
-        & > div {
-          margin: 0 8px;
-        }
+      & > div {
+        margin: 0 8px;
+      }
     }
   }
 }
