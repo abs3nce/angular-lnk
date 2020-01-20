@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   clockStrings = {
     years: '0',
@@ -25,6 +25,21 @@ export class AppComponent {
     }, 1000);
   }
 
+
+
+
+
+  ngOnInit() {
+    
+    window['particlesJS'].load('particles', 'assets/p.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  }
+
+
+
+
+  
   interval() {
     const currentDate = new Date();
     const deltaMs = currentDate.getTime() - this.startDate.getTime();
