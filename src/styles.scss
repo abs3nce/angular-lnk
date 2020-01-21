@@ -1,13 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    background-image: linear-gradient(to bottom right, #ffc0cb, #e75480);
-    color: #fff;
+  //background-image: linear-gradient(to bottom right, #ffc0cb, #e75480);
 
-    font-family: 'Pacifico', cursive;
-    font-size: 6vh;
+  background: linear-gradient(
+    324deg,
+    #ff596f,
+    #ff7488,
+    #ff7366,
+    #ff7a44,
+    #ffb054,
+    #b31983,
+    #a01675,
+    #8e1467,
+    #7c115a,
+    #6a0e4d,
+    #2f97c1,
+    #1ccad8,
+    #15e6cd,
+    #0799fc
+  );
+  background-size: 2800% 2800%;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 23% 0%;
+    }
+    50% {
+      background-position: 78% 100%;
+    }
+    100% {
+      background-position: 23% 0%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 23% 0%;
+    }
+    50% {
+      background-position: 78% 100%;
+    }
+    100% {
+      background-position: 23% 0%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 23% 0%;
+    }
+    50% {
+      background-position: 78% 100%;
+    }
+    100% {
+      background-position: 23% 0%;
+    }
+  }
+
+  color: #fff;
+
+  font-family: "Pacifico", cursive;
+  font-size: 6vh;
 }
